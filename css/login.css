@@ -1,0 +1,65 @@
+/*login的样式文件 所有的元素前必须加#page_login以示所用的页面*/
+#page_login .login_box{
+    text-align:center;
+}
+#page_login .login_box img{
+    width:60px;
+    background:#CFCFCF;
+    padding:6px;
+    opacity:0.9;
+    margin:0 auto;
+    border-radius:2.8em;
+}
+#page_login .login_box{
+    background:#fff;
+    -webkit-box-shadow: 0 1px 8px /*{global-box-shadow-size}*/ rgba(0,0,0,0.2) /*{global-box-shadow-color}*/;
+    -moz-box-shadow: 0 1px 8px /*{global-box-shadow-size}*/ rgba(0,0,0,0.2) /*{global-box-shadow-color}*/;
+    box-shadow: 0 1px 8px /*{global-box-shadow-size}*/ rgba(0,0,0,0.2) /*{global-box-shadow-color}*/;
+}
+#page_login .login_title{
+    color:#00B300;
+    font-family:"微软雅黑","宋体";
+    border-bottom:2px #00B300 solid;
+}
+#page_login .login_title .en{
+    float:right;
+    font-style:italic;
+    font-variant:small-caps;
+}
+#page_login .form_tip{
+    color: #FC5900;
+}
+#page_login .form_success{
+    color: green;
+}
+#page_login .form_error{
+    color: red;
+}
+
+/*高分辨率*/
+@media screen and (min-device-width:600px){
+    #page_login .tip_box{
+        height:3em;
+        display:block;
+        text-align: center;
+        font-size: 1.2em;
+        color:red;
+        padding-bottom:5px;
+    }
+    #page_login .login_box{
+        padding:3em 2em;
+    }
+}
+@media screen and (min-device-width:240px) and (max-device-width:600px){
+    #page_login .tip_box{
+        height:2.5em;
+        display:block;
+        text-align: center;
+        font-size: 0.9em;
+        color:red;
+        padding-bottom:5px;
+    }
+    #page_login .login_box{
+        padding:2em 1em;
+    }
+}

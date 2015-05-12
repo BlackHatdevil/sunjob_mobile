@@ -1,0 +1,12 @@
+﻿阳光职场sunjob的index页面设计
+一，包含所有jq mobile框架文件（使用min的）;
+二，包含主页文件index.html,index.css,index.js;
+三，包含其他页面的文件，具体查看代码，因为加载其他页面只加载data-role=page部分
+
+index注意点：
+1/在index.js中使用pageinit，每次加载主页的的时check_login一下然后刷新登陆状况，同步到localstorage
+2/注意：trigger("create")在data-role="header"中并不好用
+3/appload.html是所有主页的根基，其dom不会被删除，其他页面都是依赖它，加载其他页面只加载dom中第一个page！
+4/主页是判断用户登陆的根基之一：每次show的时候都必须发送ajax请求确认登陆状态，不能通过JS全局变量IS_LOGIN来判断！
+5/特别注意底部的工具栏切换不止要设置data-id="true"，还要设置工具栏所有跳转的page页面是data-dom-cache="true"，否则会导致页面切换闪白！
+

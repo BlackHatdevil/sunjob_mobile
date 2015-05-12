@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>安全与密码</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+
+        <!--包含必备jq mobile文件-->
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.css" media="all">
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.icons.min.css" media="all">
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.structure.min.css" media="all">
+        <script src="jquery.mobile/jquery.js"></script>
+        <!--公共的js和css-->
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" href="css/style.css" media="all">
+        <!--公共的js和css结束-->
+        <script src="jquery.mobile/jquery.mobile.min.js"></script>
+        <!--必备框架文件结束-->
+
+        <!--包含settings_secure定义的css和js-->
+        <link rel="stylesheet" href="css/settings_secure.css" media="all">
+        <script src="js/settings_secure.js"></script>
+        <!--自定义的css和js结束-->
+    </head>
+    <body>
+        <div id="page_settings_secure" data-role="page">
+            <div id="header_settings_secure" data-role="header" data-theme="c" data-position="fixed">
+                <a data-icon="back" data-iconpos="notext" data-rel="back" data-theme="a">返回</a>
+                <h1 class="home_title">安全与密码</h1>
+            </div>
+            <div id="content_settings_secure" data-theme="a" data-role="content">
+                <div id="pop_info" data-role="popup">提示</div>
+                <ul data-role="listview" data-inset="true">
+                    <li class="password_title" data-role="list-divider">修改密码</li>
+                    <li>
+                    <form class="ajax_form" action="" method="POST">
+                        <div data-role="fieldcontain">
+                            <label for="user_pwd">新密码:</label>
+                            <input class="textbox" value="" id="user_pwd" type="password" name="user_pwd"/>
+                        </div>
+                        <div data-role="fieldcontain">
+                            <label for="confirm_user_pwd">确认密码:</label>
+                            <input class="textbox" value="" id="confirm_user_pwd" type="password" name="confirm_user_pwd"/>
+                        </div>
+                        <div class="submit_btn_row">
+                            <a href="" data-role="button" data-inline="true" id="submit_form">保存新密码</a>
+                        </div>
+                        <div class="submiting">
+                        <a data-role="button" data-inline="true">保存中...</a>
+                        </div>
+                    </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

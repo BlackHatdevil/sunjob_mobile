@@ -1,0 +1,8 @@
+#page_sign_deal [data-role="list-divider"]{
+    color:#fff;
+    text-shadow:none;
+    font-size:1.1em;
+}
+#page_sign_deal #content_sign_deal .content, #page_sign_deal #content_sign_deal .more_info{
+    margin-top:2em;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>我的关注</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+
+        <!--包含必备jq mobile文件-->
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.css" media="all">
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.icons.min.css" media="all">
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.structure.min.css" media="all">
+        <script src="jquery.mobile/jquery.js"></script>
+        <!--公共的js和css-->
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" href="css/style.css" media="all">
+        <!--公共的js和css结束-->
+        <script src="jquery.mobile/jquery.mobile.min.js"></script>
+        <!--必备框架文件结束-->
+
+        <!--包含focus定义的css和js-->
+        <link rel="stylesheet" href="css/focus.css" media="all">
+        <script src="js/focus.js"></script>
+        <!--自定义的css和js结束-->
+    </head>
+    <body>
+        <div id="page_focus" data-role="page">
+            <div id="header_focus" data-role="header" data-position="fixed" data-theme="c">
+                <a href="#" data-rel="back" data-icon="back" data-theme="a" data-iconpos="notext">返回</a>
+                <h1 class="home_title">我的关注</h1>
+            </div>
+            <div id="content_focus" data-role="content">
+                <ul data-role="listview" class="list_deals" data-theme="c" data-split-icon="delete">
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

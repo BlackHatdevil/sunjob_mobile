@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <!--这个页面显示用户点击开来的一项兼职的详细信息-->
+    <head>
+        <title>申请详情</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+
+        <!--包含必备jq mobile文件-->
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.css" media="all">
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.icons.min.css" media="all">
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.structure.min.css" media="all">
+        <script src="jquery.mobile/jquery.js"></script>
+        <!--公共的js和css-->
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" href="css/style.css" media="all">
+        <!--公共的js和css结束-->
+        <script src="jquery.mobile/jquery.mobile.min.js"></script>
+        <!--必备框架文件结束-->
+
+        <!--包含sign_deal自定义的css和js-->
+        <link rel="stylesheet" href="css/sign_deal.css" media="all">
+        <script src="js/sign_deal.js"></script>
+        <!--自定义的css和js结束-->
+    </head>
+    <body>
+        <div data-role="page" id="page_sign_deal" data-theme="a">
+            <div data-role="header" id="header_sign_deal" data-position="fixed" data-theme="c">
+                <a href="#" data-theme="a" data-icon="back" data-rel="back" data-iconpos="notext">返回</a>
+                <h1 class="home_title">申请详情</h1>
+                <a href="#" data-theme="a" id="del_sign" data-icon="delete">撤消申请</a>
+            </div>
+            <div data-role="content" id="content_sign_deal" data-theme="a">
+
+                <ul data-role="listview" class="main" data-inset="true">
+                    <li data-role="list-divider" class="sign_deal_title" data-theme="a">标题</li>
+                    <li class="sign_deal_type">兼职类型：</li>
+                    <li>面试时间：</li>
+                    <li>面试地点：</li>
+                    <li>面试官：</li>
+                    <li>面试电话：</li>
+                    <li>申请状态：</li>
+                </ul>
+
+                <ul data-role="listview" class="work" data-inset="true">
+                    <li data-role="list-divider">工作相关</li>
+                    <li>招聘人数：</li>
+                    <li>性别要求：</li>
+                    <li>招聘截止：</li>
+                    <li>招聘电话：</li>
+                    <li>信息来源：</li>
+                    <li>薪资：</li>
+                    <li>结算方式：</li>
+                    <li>工作周期：</li>
+                    <li>工作时间：</li>
+                    <li>工作地点：</li>
+                    <li>工作内容以及要求：</li>
+                </ul>
+
+            </div>
+        </div>
+    </body>
+</html>

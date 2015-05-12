@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>选择学校</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+
+        <!--包含必备jq mobile文件-->
+        <link rel="stylesheet" href="../jquery.mobile/jquery.mobile.css" media="all">
+        <link rel="stylesheet" href="../jquery.mobile/jquery.mobile.icons.min.css" media="all">
+        <link rel="stylesheet" href="../jquery.mobile/jquery.mobile.structure.min.css" media="all">
+        <script src="../jquery.mobile/jquery.js"></script>
+        <!--公共的js和css-->
+        <script src="../js/script.js"></script>
+        <link rel="stylesheet" href="../css/style.css" media="all">
+        <!--公共的js和css结束-->
+        <script src="../jquery.mobile/jquery.mobile.min.js"></script>
+        <!--必备框架文件结束-->
+
+        <!--包含resume_edit定义的css和js-->
+        <link rel="stylesheet" href="../css/resume_edit.css" media="all">
+        <script src="../js/resume_edit.js"></script>
+        <!--自定义的css和js结束-->
+    </head>
+    <body>
+        <div id="page_resume_edit_college" data-role="page">
+            <div id="header_resume_edit_college" data-role="header" data-position="fixed" data-theme="c">
+                <a href="#" data-rel="back" data-icon="back" data-theme="a" data-iconpos="notext">返回</a>
+                <h1 class="home_title">选择学校</h1>
+            </div>
+            <div id="content_resume_edit_college" data-role="content">
+                <input type="search" id="search_college" value="" placeholder="输入大学关键字(至少两个字符)" data-theme="c">
+                <ul data-role="listview" data-inset="true" id="list_college">
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

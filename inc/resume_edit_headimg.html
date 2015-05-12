@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>更换头像</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+
+        <!--包含必备jq mobile文件-->
+        <link rel="stylesheet" href="../jquery.mobile/jquery.mobile.css" media="all">
+        <link rel="stylesheet" href="../jquery.mobile/jquery.mobile.icons.min.css" media="all">
+        <link rel="stylesheet" href="../jquery.mobile/jquery.mobile.structure.min.css" media="all">
+        <script src="../jquery.mobile/jquery.js"></script>
+        <!--公共的js和css-->
+        <script src="../js/script.js"></script>
+        <link rel="stylesheet" href="../css/style.css" media="all">
+        <!--公共的js和css结束-->
+        <script src="../jquery.mobile/jquery.mobile.min.js"></script>
+        <!--必备框架文件结束-->
+
+        <!--包含resume_edit定义的css和js-->
+        <link rel="stylesheet" href="../css/resume_edit.css" media="all">
+        <script src="../js/resume_edit.js"></script>
+        <script src="../js/ajaxupload.js"></script>
+        <!--自定义的css和js结束-->
+    </head>
+    <body>
+        <div id="page_resume_edit_headimg" data-role="page">
+            <!--页眉开始-->
+            <div id="header_resume_edit_headimg" data-role="header" data-position="fixed" data-theme="c">
+                <h1 class="home_title">更换头像</h1>
+                <a href="#" data-rel="back" data-icon="back" data-theme="a" data-iconpos="notext">返回</a>
+            </div>
+            <!--页眉结束-->
+
+            <!--content内部-->
+            <div id="content_resume_edit_headimg" data-role="content">
+                <div class="user_head">
+                    <img id="user_head_big" src="" alt=""/>
+                    <button id="tri_upload">选择图片</button>
+                    <button id="img_uploading">上传中...</button>
+                    <input type="file" id="avatar_file" name="avatar_file"/>
+                </div>
+            </div>
+            <!--content结束-->
+        </div>
+    </body>
+</html>

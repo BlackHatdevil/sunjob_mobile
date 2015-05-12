@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>管理申请</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+
+        <!--包含必备jq mobile文件-->
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.css" media="all">
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.icons.min.css" media="all">
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.structure.min.css" media="all">
+        <script src="jquery.mobile/jquery.js"></script>
+        <!--公共的js和css-->
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" href="css/style.css" media="all">
+        <!--公共的js和css结束-->
+        <script src="jquery.mobile/jquery.mobile.min.js"></script>
+        <!--必备框架文件结束-->
+
+        <!--包含sign定义的css和js-->
+        <link rel="stylesheet" href="css/sign.css" media="all">
+        <script src="js/sign.js"></script>
+        <!--自定义的css和js结束-->
+    </head>
+    <body>
+        <div id="page_sign" data-role="page">
+            <div id="header_sign" data-role="header" data-position="fixed" data-theme="c">
+                <a href="#" data-rel="back" data-icon="back" data-theme="a" data-iconpos="notext">返回</a>
+                <h1 class="home_title">管理申请</h1>
+            </div>
+            <div id="content_sign" data-role="content">
+                <ol data-role="listview" class="list_signs" data-theme="c">
+                    <li data-role="list-divider" data-theme="a">我申请的工作</li>
+                </ol>
+                <ol data-role="listview" id="fail_signs" data-theme="c">
+                    <li data-role="list-divider" data-theme="a">已失效的申请</li>
+                </ol>
+            </div>
+        </div>
+    </body>
+</html>

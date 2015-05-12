@@ -1,0 +1,78 @@
+#page_settings #content_settings .ajax_form label{
+    color:#666;
+    font-size:1em;
+    font-weight:bold;
+}
+#page_settings #content_settings .ajax_form #sex-radio label{
+    color:black;
+}
+#page_settings #content_settings .ajax_form #contact_box .textbox{
+    margin-top: 1em;
+    min-height: 1.5em;
+    text-align: left;
+    padding: 0.4em;
+    line-height: 1.4em;
+    background-color: #F6F6F6;
+    border: solid 0.1em #F2E663;
+    color: #000;
+    margin: 0.5em 0px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2) inset;
+    border-radius:0.5em;
+}
+#page_settings #content_settings .to_resume{
+    float:right;
+    margin-top:2em;
+}
+#page_settings #content_settings .submit_btn_row{
+    text-align:center;
+}
+#page_settings #content_settings .submiting{
+    display:none;
+    text-align:center;
+}
+#page_settings #content_settings .submiting a{
+    color:#FF8700;
+}
+
+/*-----------------------------高分*/
+@media all and (min-device-width:600px){
+    #page_settings #pop_info{
+        background:#000;
+        padding:3em;
+        color:#fff;
+        opacity:0.6;
+        font-weight:bold;
+        text-align:center;
+        font-size:1.5em;
+        font-family:"幼圆";
+    }
+    #page_settings #content_settings .ajax_form #contact_box .contact_click{
+        font-size:1.1em;
+        margin-left:0.5em;
+    }
+    #page_settings #content_settings .ajax_form #contact_box .textbox{
+        width:80%;
+    }
+    #page_settings #content_settings .to_resume{
+        font-size:1.2em;
+    }
+}
+@media all and (min-device-width:240px) and (max-device-width:600px){
+    #page_settings #pop_info{
+        background:#000;
+        padding:2em;
+        color:#fff;
+        opacity:0.6;
+        font-weight:bold;
+        text-align:center;
+        font-size:1.2em;
+        font-family:"幼圆";
+    }
+    #page_settings #content_settings .ajax_form #contact_box .contact_click{
+        font-size:1em;
+        margin-left:1em;
+    }
+    #page_settings #content_settings .to_resume{
+        font-size:0.8em;
+    }
+}

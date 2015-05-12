@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <widget id="com.example.sunjob" version="0.0.8">          
+        <name>阳光职场</name>          
+        <description>大学找工作，上阳光职场</description>         
+        <author email="devilyouwei@gmail.com" href="">devil</author>          
+        <content src="appload.html" />          
+        <access origin="*" />      
+    </widget>  

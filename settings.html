@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>个人设置</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+
+        <!--包含必备jq mobile文件-->
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.css" media="all">
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.icons.min.css" media="all">
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.structure.min.css" media="all">
+        <script src="jquery.mobile/jquery.js"></script>
+        <!--公共的js和css-->
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" href="css/style.css" media="all">
+        <!--公共的js和css结束-->
+        <script src="jquery.mobile/jquery.mobile.min.js"></script>
+        <!--必备框架文件结束-->
+
+        <!--包含settings定义的css和js-->
+        <link rel="stylesheet" href="css/settings.css" media="all">
+        <script src="js/settings.js"></script>
+        <!--自定义的css和js结束-->
+    </head>
+    <body>
+        <div id="page_settings" data-role="page">
+            <div id="header_settings" data-role="header" data-position="fixed" data-theme="c">
+                <a href="#" data-theme="a" data-rel="back" data-icon="back" data-iconpos="notext">返回</a>
+                <h1 class="home_title">个人设置</h1>
+                <a href="settings_secure.html" data-transition="slide" data-theme="a" data-icon="lock">密码与安全</a>
+            </div>
+
+            <div id="content_settings" data-role="content">
+                <div id="pop_info" data-role="popup">提示</div>
+                <form action="" method="POST" class="ajax_form" >
+                    <div data-role="fieldcontain">
+                        <label for="user_name">会员帐号:</label>
+                        <input id="user_name" type="text" value="" class="textbox" disabled="true" />
+                    </div>
+
+                    <div data-role="fieldcontain">
+                        <label for="email">电子邮箱:</label>
+                        <input id="email" type="email" value="" class="textbox" disabled="true" />
+                    </div>
+
+                    <div data-role="fieldcontain">
+                        <label for="sex-radio">性别:</label>
+                        <div id="sex-radio" data-role="controlgroup" data-type="horizontal">
+                            <label for="weizhi">未知</label>
+                            <input type="radio" name="sex" id="weizhi" value="-1" >
+                            <label for="nan">男</label>
+                            <input type="radio" name="sex" id="nan" value="1" >
+                            <label for="nv">女</label>
+                            <input type="radio" name="sex" id="nv" value="0" >
+                        </div>
+                    </div>
+                    <div data-role="fieldcontain">
+                        <label for="province">所在地:</label>
+                        <select id="province" name="province" data-inline="true">				
+                            <option value="" rel="0">请选择省份</option>			
+                        </select>
+                        <select id="city" name="city" data-inline="true">				
+                            <option value="" rel="0">请选择城市</option>
+                        </select>
+                    </div>
+
+                    <div data-role="fieldcontain">
+                        <label for="intro">个性签名:</label>
+                        <textarea id="intro" name="intro" placeholder="让大家多了解你"></textarea>
+                    </div>
+
+                    <div id="contact_box" data-role="fieldcontain">
+                        <label for="conatct">联系方式:<a class="contact_click" href="#" onclick="settings_add_contact()">添加</a></label>
+                        <input id="conatct" data-role="none" type="text" value="" class="textbox" name="contact[]" />							
+                    </div>
+                    </br>
+                    <div class="submit_btn_row">
+                        <a data-role="button" id="submit_form" data-inline="true">保存最新设置</a>
+                    </div>
+                    <div class="submiting">
+                        <a data-role="button" data-inline="true">保存中...</a>
+                    </div>
+                </form>
+                <a class="to_resume" href="resume.html">更好工作，来完善个人简历吧</a>
+            </div>
+        </div>
+    </body>
+</html>

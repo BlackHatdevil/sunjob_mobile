@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>编辑空闲时间</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+
+        <!--包含必备jq mobile文件-->
+        <link rel="stylesheet" href="../jquery.mobile/jquery.mobile.css" media="all">
+        <link rel="stylesheet" href="../jquery.mobile/jquery.mobile.icons.min.css" media="all">
+        <link rel="stylesheet" href="../jquery.mobile/jquery.mobile.structure.min.css" media="all">
+        <script src="../jquery.mobile/jquery.js"></script>
+        <!--公共的js和css-->
+        <script src="../js/script.js"></script>
+        <link rel="stylesheet" href="../css/style.css" media="all">
+        <!--公共的js和css结束-->
+        <script src="../jquery.mobile/jquery.mobile.min.js"></script>
+        <!--必备框架文件结束-->
+
+        <!--包含resume_edit定义的css和js-->
+        <link rel="stylesheet" href="../css/resume_edit.css" media="all">
+        <script src="../js/resume_edit.js"></script>
+        <!--自定义的css和js结束-->
+    </head>
+    <body>
+        <div id="page_resume_edit_freetime" data-role="page">
+            <div id="header_resume_edit_freetime" data-role="header" data-position="fixed" data-theme="c">
+                <a href="#" data-rel="back" data-icon="back" data-theme="a" data-iconpos="notext">返回</a>
+                <h1 class="home_title">我的空闲时间</h1>
+                <a href="#" data-theme="a" data-icon="check" id="sub_time_table">提交</a>
+            </div>
+            <div id="content_resume_edit_freetime" data-role="content">
+                <form method="POST" class="ajax_form">
+                    <table id="time_table" cellPadding="5%" cellSpacing="0" width="100%">
+                        <tr id="time_table_header">
+                            <th>时间段</th>
+                            <th>Mon.</th>
+                            <th>Tues.</th>
+                            <th>Wed.</th>
+                            <th>Thur.</th>
+                            <th>Fri.</th>
+                            <th>Sat.</th>
+                            <th>Sun.</th>
+                        </tr>
+                        <tr>
+                            <th>上午</th>
+                            <td class="time_block"><input name="mon1" id="mon1" type=hidden></td>
+                            <td class="time_block"><input name="tues1" id="tues1" type="hidden"></td>
+                            <td class="time_block"><input name="wed1" id="wed1" type="hidden"></td>
+                            <td class="time_block"><input name="thur1" id="thur1" type="hidden"></td>
+                            <td class="time_block"><input name="fri1" id="fri1" type="hidden"></td>
+                            <td class="time_block"><input name="sat1" id="sat1" type="hidden"></td>
+                            <td class="time_block"><input name="sun1" id="sun1" type="hidden"></td>
+                        </tr>
+                        <tr>
+                            <th>中午</th>
+                            <td class="time_block"><input name="mon2" id="mon2" type=hidden></td>
+                            <td class="time_block"><input name="tues2" id="tues2" type="hidden"></td>
+                            <td class="time_block"><input name="wed2" id="wed2" type="hidden"></td>
+                            <td class="time_block"><input name="thur2" id="thur2" type="hidden"></td>
+                            <td class="time_block"><input name="fri2" id="fri2" type="hidden"></td>
+                            <td class="time_block"><input name="sat2" id="sat2" type="hidden"></td>
+                            <td class="time_block"><input name="sun2" id="sun2" type="hidden"></td>
+                        </tr>
+                        <tr>
+                            <th>中午</th>
+                            <td class="time_block"><input name="mon3" id="mon3" type=hidden></td>
+                            <td class="time_block"><input name="tues3" id="tues3" type="hidden"></td>
+                            <td class="time_block"><input name="wed3" id="wed3" type="hidden"></td>
+                            <td class="time_block"><input name="thur3" id="thur3" type="hidden"></td>
+                            <td class="time_block"><input name="fri3" id="fri3" type="hidden"></td>
+                            <td class="time_block"><input name="sat3" id="sat3" type="hidden"></td>
+                            <td class="time_block"><input name="sun3" id="sun3" type="hidden"></td>
+                        </tr>
+                        <tr>
+                            <th>下午</th>
+                            <td class="time_block"><input name="mon4" id="mon4" type=hidden></td>
+                            <td class="time_block"><input name="tues4" id="tues4" type="hidden"></td>
+                            <td class="time_block"><input name="wed4" id="wed4" type="hidden"></td>
+                            <td class="time_block"><input name="thur4" id="thur4" type="hidden"></td>
+                            <td class="time_block"><input name="fri4" id="fri4" type="hidden"></td>
+                            <td class="time_block"><input name="sat4" id="sat4" type="hidden"></td>
+                            <td class="time_block"><input name="sun4" id="sun4" type="hidden"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

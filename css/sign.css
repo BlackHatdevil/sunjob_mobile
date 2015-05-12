@@ -1,0 +1,50 @@
+#page_sign [data-role="list-divider"]{
+    border:none;
+    color:#fff;
+    font-size:1em;
+    text-shadow:none;
+}
+#page_sign #content_sign li a p .sign_gray{
+    color:gray;
+}
+#page_sign #content_sign li a p .sign_orange{
+    color:#f90;
+}
+#page_sign #content_sign li a p .sign_green{
+    color:green;
+}
+#page_sign #content_sign li a p .sign_darkgreen{
+    color:green;
+    font-weight:bold;
+    font-size:15px;
+}
+#page_sign #fail_signs{
+    margin-top:2em;
+}
+#page_sign #fail_signs [data-role="list-divider"]{
+    background:gray;
+}
+
+/*低分*/
+@media screen and (min-device-width:600px){
+    #content_sign [data-role="listview"] h3{
+        font-size:1em;
+        width:95%;
+    }
+    #page_sign #content_sign .list_signs li a p span{
+        float:left;
+        width:45%;
+        text-align:left;
+    }
+}
+@media screen and (min-device-width:240px) and (max-device-width:600px){
+    #content_sign [data-role="listview"] h3{
+        font-size:0.8em;
+        width:90%;
+    }
+    #page_sign #content_sign .list_signs li a p span{
+        float:left;
+        width:35%;
+        text-align:left;
+    }
+}

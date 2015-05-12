@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>个人简历</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+
+        <!--包含必备jq mobile文件-->
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.css" media="all">
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.icons.min.css" media="all">
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.structure.min.css" media="all">
+        <script src="jquery.mobile/jquery.js"></script>
+        <!--公共的js和css-->
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" href="css/style.css" media="all">
+        <!--公共的js和css结束-->
+        <script src="jquery.mobile/jquery.mobile.min.js"></script>
+        <!--必备框架文件结束-->
+
+        <!--包含resume定义的css和js-->
+        <link rel="stylesheet" href="css/resume.css" media="all">
+        <script src="js/resume.js"></script>
+        <!--自定义的css和js结束-->
+    </head>
+    <body>
+        <div id="page_resume" data-role="page" data-dom-cache="true">
+
+            <!--resume头部开始-->
+            <div id="header_resume" data-role="header" data-position="fixed" data-theme="c">
+                <!--强制返回home-->
+                <a href="#" data-rel="back" data-icon="back" data-theme="a" data-iconpos="notext">返回</a>
+                <h1 class="home_title">个人简历</h1>
+                <a href="resume_edit.html" class="to_resume_edit" data-icon="edit" data-theme="a" data-transition="slide">编辑简历</a>
+            </div>
+            <div id="content_resume" data-role="content">
+                <ul data-role="listview" data-theme="c">
+                    <li id="user_head">
+                    <div><img src="" alt=""/></div>
+                    <div id="signature"></div>
+                    </li>
+                </ul>
+                <ul data-role="listview" data-theme="c" id="resume_info">
+                    <li id="base_info">
+                    <div class="ui-grid-a">
+                        <div class="left ui-block-a"><h1>基本信息</h1></div>
+                        <div class="right ui-block-b"></div>
+                    </div>
+                    </li>
+                    <li id="intention">
+                    <div class="ui-grid-a">
+                        <div class="left ui-block-a"><h1>求职意向</h1></div>
+                        <div class="right ui-block-b"></div>
+                    </div>
+                    </li>
+                    <li id="college">
+                    <div class="ui-grid-a">
+                        <div class="left ui-block-a"><h1>学习经历</h1></div>
+                        <div class="right ui-block-b"></div>
+                    </div>
+                    <li id="introme">
+                    <div class="ui-grid-a">
+                        <div class="left ui-block-a"><h1>自我简介</h1></div>
+                        <div class="right ui-block-b"></div>
+                    </div>
+                    </li>
+                    <li id="experience">
+                    <div class="ui-grid-a">
+                        <div class="left ui-block-a"><h1>工作经验</h1></div>
+                        <div class="right ui-block-b"></div>
+                    </div>
+                    </li>
+                    <li id="contact">
+                    <div class="ui-grid-a">
+                        <div class="left ui-block-a"><h1>联系方式</h1></div>
+                        <div class="right ui-block-b"></div>
+                    </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

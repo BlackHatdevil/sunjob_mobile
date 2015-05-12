@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>阳光职场-注册</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--包含必备jq mobile文件-->
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.css" media="all">
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.icons.min.css" media="all">
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.structure.min.css" media="all">
+        <script src="jquery.mobile/jquery.js"></script>
+        <!--公共的js和css-->
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" href="css/style.css" media="all">
+        <!--公共的js和css结束-->
+        <script src="jquery.mobile/jquery.mobile.min.js"></script>
+        <!--必备框架文件结束-->
+
+        <!--包含register自定义的css和js-->
+        <link rel="stylesheet" href="css/register.css" media="all">
+        <script src="js/register.js"></script>
+        <!--register自定义的css和js结束-->
+    </head>
+    <body>
+        <div id="page_register" data-role="page">
+            <!--start head-->
+            <div data-role="header" data-position="fixed">
+                <a href="#"  data-rel="back" data-icon="back" data-iconpos="notext"></a>
+                <h1 class="title">注册</h1>
+                <a href="#register_navbar" class="more" data-role="button" data-inline="true" data-icon="bars">更多</a>
+            </div>
+            <!--end head-->
+
+            <!--content start-->
+            <div data-role="content">
+                <div class="register_box">
+                    <div class="tip_box"></div>
+                    <form action="" method="POST" id="user_register_form">
+                        <input type="text" name="user_name" value="" required placeholder="输入会员账号"/>
+                        <br/>
+                        <input type="email" name="email" value="" required placeholder="输入电子邮箱"/>
+                        <br/>
+                        <input type="password" name="user_pwd" value="" required placeholder="创建密码"/>
+                        <br/>
+                        <input type="password" name="confirm_user_pwd" value="" required placeholder="确认密码"/>
+                        <br/>
+                        <a data-role="button" id="submit_form" href="#">注册</a>
+                    </form>
+                    <a id="show_noserver" href="inc/noserver.html" data-rel="dialog" data-role="nojs">无法连接服务器</a> 
+                </div>
+            </div>
+            <!--content end-->
+
+            <!--foot start-->
+            <div data-role="footer" class="ui-bar" data-position="fixed" data-theme="b">
+                <div class="copyright">
+                    <h4>
+                    Copyright © 2014 www.520sunjob.com All right reserved
+                    </h4>
+                </div>
+            </div>
+            <!--foot end-->
+        </div>
+    </body>
+</html>

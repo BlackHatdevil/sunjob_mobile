@@ -1,0 +1,24 @@
+#page_home #content_home #list_user_info .user_base_info .user_head{
+    background:white;
+    border-radius:2em;
+    width:50px;
+    height:50px;
+    border:0.15em #FFF solid;
+    margin:0.8em;
+}
+#page_home #content_home .list_user_func{
+    margin-top:3em;
+}
+/*高分*/
+@media all and (min-device-width:600px){
+    #page_home #content_home #list_user_info .user_base_info a div{
+        padding:0.2em;
+        font-size:1em;
+    }
+}
+@media all and (min-device-width:240px) and (max-device-width:600px){
+    #page_home #content_home #list_user_info .user_base_info a div{
+        padding:0.5em 0;
+        font-size:0.8em;
+    }
+}

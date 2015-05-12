@@ -1,0 +1,89 @@
+#page_resume #content_resume #user_head #signature{
+    color:#6C6C6C;
+}
+#page_resume #content_resume #resume_info li{
+    background:#fff;
+    padding:0;
+}
+#page_resume #content_resume #resume_info{
+    margin-top: 1em;
+}
+#page_resume #content_resume #resume_info .right p{
+    white-space:normal;
+}
+#page_resume #content_resume #resume_info #intention .right .intention{
+    background:orange;
+    border:none;
+    float:left;
+    margin:0.4em;
+    color:#fff;
+    text-shadow:none;
+    font-weight:bold;
+    padding:0.4em 1em;
+    font-size:0.8em;
+}
+/*平板以及高分*/
+@media all and (min-device-width:600px){
+    #page_resume #content_resume #resume_info .left{
+        width:15%;
+        min-width:5em;
+        text-align:center;
+        font-weight:bold;
+        color:#ff8700;
+    }
+    #page_resume #content_resume #resume_info .right{
+        border-left:dotted #FF8700 0.15em;
+        font-size:1.2em;
+        padding:0.5em;
+        width:85%;
+    }
+    #page_resume #content_resume #user_head{
+        background:url("../images/resume_head_bg2.gif") no-repeat fixed top;
+        background-size:100%;
+        border:none;
+        text-align:center;
+        height:7em;
+    }
+    #page_resume #content_resume #user_head div img{
+        border:solid 2px #fff;
+        border-radius: 5em;
+        height:5em;
+        width:5em;
+    }
+}
+
+/*低分*/
+@media all and (min-device-width:240px) and (max-device-width:600px){
+    #page_resume #content_resume #resume_info .left{
+        width:100%;
+        display:block;
+        min-width:5em;
+        text-align:center;
+        font-size:1em;
+        background:orange;
+        color:#fff;
+        text-shadow:none;
+    }
+    #page_resume #content_resume #resume_info .right{
+        width:100%;
+        display:block;
+        font-size:1.2em;
+        padding:0.5em;
+    }
+    #page_resume #content_resume #resume_info li{
+        border:none;
+    }
+    #page_resume #content_resume #user_head{
+        background:url("../images/resume_head_bg2.gif") no-repeat fixed top;
+        background-size:100%;
+        border:none;
+        text-align:center;
+        height:5em;
+    }
+    #page_resume #content_resume #user_head div img{
+        border:solid 2px #fff;
+        border-radius: 5em;
+        height:3.5em;
+        width:3.5em;
+    }
+}

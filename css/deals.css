@@ -1,0 +1,126 @@
+body {
+	-webkit-user-select:none;
+    -webkit-text-size-adjust:none;
+}
+.error_connect{
+    background:#ccc;
+    width:100%;
+    text-align:center;
+    text-shadow:none;
+    font-size:2em;
+    padding:2em 0;
+    color:gray;
+}
+/*兼职主页的样式*/
+/*-----------------------------至少640宽的设备--------------------------------------------*/
+@media screen and (min-device-width:600px){
+    #page_deals #header_deals #header_deals_search{
+        float:left;
+        width:40%;
+        text-align:center;
+        padding-right:5%;
+    }
+    #page_deals #header_deals #header_deals_filter{
+        float:left;
+        width:55%;
+        text-align:center;
+    }
+    #page_deals #content_deals #list_deals li a{
+        font-size:1em;
+    }
+}
+/*-----------------------------640以下的样式----------------------------------------------*/
+@media screen and (min-device-width:240px) and (max-device-width:600px){
+    #page_deals #content_deals #list_deals li a{
+        font-size:0.7em;
+    }
+    #page_deals #header_deals #header_deals_search{
+        display:block;
+        text-align:center;
+        width:100%;
+    }
+    #page_deals #header_deals #header_deals_filter{
+        width:100%;
+        text-align:center;
+        display:block;
+    }
+}
+
+#page_deals #content_deals #list_deals li a .deal_skim{
+    padding:1.1em 0 0 0;
+    font-size:0.8em;
+    color:#333;
+    font-weight:normal;
+}
+#page_deals #content_deals #list_deals li a .deal_skim span{
+    text-align: left;
+    float:left;
+    width:25%;
+    color:#808080;
+}
+#page_deals #content_deals #list_deals li a .deal_skim .deal_create_time{
+    text-align: center;
+    color:#6A9900;
+}
+#page_deals .ui-bar{
+    text-align:center;
+}
+/*下拉效果下的css*/
+#page_deals #content_deals{
+	overflow:auto;
+}
+#page_deals #content_deals .more_deals{
+    margin-top:1.6em;
+    border:solid #ccc 2px;
+    text-align:none;
+    box-shadow:none;
+}
+#pullDown, #pullUp {
+	height:90px;
+	line-height:90px;
+	padding:5px 10px;
+	font-weight:bold;
+	font-size:1.2em;
+    text-align:center;
+	color:#888;
+}
+#page_deals #content_deals #list_deals{
+    position:relative;
+}
+
+/*对deals_latest.html中元素的样式定义---------------------*/
+@media all and (min-device-width:600px){
+    #page_deals_latest #content_deals_latest #list_deals li a{
+        font-size:1em;
+    }
+}
+
+/*640以下的样式*/
+@media all and (min-device-width:240px) and (max-device-width:600px){
+    #page_deals_latest #content_deals_latest #list_deals li a{
+        font-size:0.7em;
+    }
+}
+
+#page_deals_latest #footer_deals_latest #footer_filter{
+    text-align:center;
+}
+#page_deals_latest #content_deals_latest #list_deals li a .deal_skim{
+    padding:1.1em 0 0 0;
+    font-size:0.8em;
+    color:#333;
+    font-weight:normal;
+}
+#page_deals_latest #content_deals_latest #list_deals li a .deal_skim span{
+    text-align: left;
+    float:left;
+    width:25%;
+    color:#808080;
+}
+#page_deals_latest #content_deals_latest #list_deals li a .deal_skim .deal_create_time{
+    text-align: center;
+    color:#6A9900;
+}
+#page_deals_latest .ui-bar{
+    text-align:center;
+}

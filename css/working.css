@@ -1,0 +1,28 @@
+#page_working [data-role="list-divider"]{
+    border: medium none;
+    color: #FFF;
+    font-size: 1em;
+    text-shadow: none;
+}
+#page_working #content_working #list_user_works .lidiv{
+    width:30%;
+    text-align:left;
+    float:left;
+}
+#page_working #content_working #list_user_works .libdiv1{
+
+}
+#page_working #content_working #list_user_works .libdiv2{
+}
+#page_working #content_working #list_user_works .libdiv3{
+
+}
+#page_working #content_working #list_user_works .green{
+    color:#9c3;
+}
+#page_working #content_working #list_user_works .orange{
+    color:#f90;
+}
+#page_working #content_working #list_user_works .gray{
+    color:gray;
+}

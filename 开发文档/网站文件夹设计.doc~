@@ -1,0 +1,61 @@
+﻿阳光职场sunjob的开发文件夹
+
+采用了fanwe的二次开发方式
+
+客户所见程序在ygzc/app目录下，包括前端和后端
+
+文件 规划
+计划采用分离开发模式，把移动和PC分离开发，公用PHP但前端分离
+
+约定文件：
+script.js是一些公共方法和全局变量
+style.css是一些公共样式
+
+约定命名：
+1、所有的js里面的function 前缀_函数 --->前缀=对应html文件的名字
+(比如index.html->index.js->function index_xxx function)
+2、所有的css对样式的都必须有data-role="page"的id打头，即当前的css文件的元素样式#id(page){}获取page的id
+(比如#page_register .xxx h1{})
+3、所有的js选择器必须加上data-role="page"的id打头
+(比如register.js中id=form_submit的选择器应该是$("#oage_regitser #form_submit"))
+记住使用以上的命名方法纯属无奈，因为jqmb用的ajax去加载页面，所有的页面最终汇成一个文件，不能出现重复js方法和混淆的css定义
+
+-Lib:开发后端的程序
+存放在方维的服务平台；由于前端使用phongap，jq mobile封装成app，不能放入PHP框架脚本，只好使用域名访问加载数据了
+在fanwe Lib服务器下面：首字母为m的PHP文件是为手机端准备的PHP脚本
+-------muserModule ->包含了用户的一些后端方法
+
+-Tpl：开发前端的程序
+存放在文件夹sunjob_mobile文件夹下面，全部是html，css，jq文件，使用json，ajax向后端程序请求数据
+文件列表：
+准备文件：
+sunjob_mobile/jquery.mobile/
+------jquery.mobile框架文件
+------jquery.js;
+------jquery.mobile.js;
+------jquery.mobile.css;
+------jquery.mobile.structure.css;
+------jquery.mobile.icons.css;
+(以上是基本框架文件，必不可少！)
+------sunjob_mobile/css/
+------sunjob_mobile/js/
+------sunjob_mobile/inc/ ->存放公共的html，到时候加载用
+------sunjob_mobile/images/ ->网站的图片
+
+我的开发文件：
+sunjob_mobile/
+1、index
+------./index.html->主页;
+------./css/index.css->主页样式;
+------./js/index.js->主页脚本;
+------./images/->主页图片
+2、regiter
+------./register.html->注册页面
+------./css/register.css->注册样式;
+------./js/register.js->注册脚本
+------。/images/->图片
+3、login
+------./login.html->登陆
+------./css/login.css->登陆
+------./js/login.js->脚本
+

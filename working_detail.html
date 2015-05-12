@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>我的工作详情</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--包含必备jq mobile文件-->
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.css" media="all">
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.icons.min.css" media="all">
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.structure.min.css" media="all">
+        <script src="jquery.mobile/jquery.js"></script>
+        <!--公共的js和css-->
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" href="css/style.css" media="all">
+        <!--公共的js和css结束-->
+        <script src="jquery.mobile/jquery.mobile.min.js"></script>
+        <!--必备框架文件结束-->
+
+        <!--包含working_detail定义的css和js-->
+        <link rel="stylesheet" href="css/working_detail.css" media="all">
+        <script src="js/working_detail.js"></script>
+        <!--自定义的css和js结束-->
+    </head>
+    <body>
+        <div id="page_working_detail" data-role="page">
+            <div id="header_working_detail" data-role="header" data-position="fixed">
+                <a href="#" data-rel="back" data-icon="back" data-theme="a" data-iconpos="notext">返回</a>
+                <h1 class="home_title">工作名称</h1>
+            </div>
+            <div id="content_working_detail" data-role="content">
+                <ul data-role="listview" data-inset="true" id="list_working">
+                	<li data-role="list-divider">我的工作相关</li>
+                    <li class="fw_b">状态：</li>
+                    <li>薪资：</li>
+                    <li>结算方式：</li>
+                    <li>工作周期：</li>
+                    <li>工作时间：</li>
+                    <li>地点：</li>
+                    <li>联系电话：</li>
+                    <li>工作内容以及要求：</li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

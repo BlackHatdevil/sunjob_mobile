@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>最新兼职</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+
+        <!--包含必备jq mobile文件-->
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.css" media="all">
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.icons.min.css" media="all">
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.structure.min.css" media="all">
+        <script src="jquery.mobile/jquery.js"></script>
+        <!--公共的js和css-->
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" href="css/style.css" media="all">
+        <!--公共的js和css结束-->
+        <script src="jquery.mobile/jquery.mobile.min.js"></script>
+        <!--必备框架文件结束-->
+
+        <!--包含deals定义的css和js(直接把latest框定在deals中)-->
+        <link rel="stylesheet" href="css/deals.css" media="all">
+        <script src="js/deals.js"></script>
+        <!--自定义的css和js结束-->
+    </head>
+    <body>
+        <div data-role="page" id="page_deals_latest" data-theme="a">
+
+            <div data-role="header" id="header_deals_latest" data-position=fixed>
+                <a href="#" data-rel="back" data-icon="back" data-iconpos="notext">返回</a>
+                <h1 class="title">最新兼职</h1>
+            </div>
+            <div data-role="content" id="content_deals_latest">
+                <ul data-role="listview" data-theme="a" id="list_deals">
+                </ul>
+            </div>
+            <div data-role="footer" id="footer_deals_latest" data-position="fixed" class="ui-bar">
+                <div id="footer_filter">
+                    <select id="province" name="province" data-inline="true"><option value="0">省份</option></select>
+                    <select id="city" name="city" data-inline="true"><option value="0">城市</option></select>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

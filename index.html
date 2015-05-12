@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--所有页面的首页，包含所有页面的css和js这是由于jquery mobile的特殊特性-->
+        <title>阳光职场-首页</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+
+        <!--包含必备jq mobile文件-->
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.css" media="all">
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.icons.min.css" media="all">
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.structure.min.css" media="all">
+        <script src="jquery.mobile/jquery.js"></script>
+        <!--公共的js和css-->
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" href="css/style.css" media="all">
+        <!--公共的js和css结束-->
+        <script src="jquery.mobile/jquery.mobile.min.js"></script>
+        <!--必备框架文件结束-->
+
+        <!--包含index自定义的css和js-->
+        <link rel="stylesheet" href="css/index.css" media="all">
+        <link rel="stylesheet" href="css/flexslider.css" media="all">
+        <script src="js/index.js"></script>
+        <script src="js/jquery.easing.js"></script>
+        <script src="js/jquery.flexslider-min.js"></script>
+        <!--自定义的css和js结束-->
+    </head>
+    <body>
+        <div data-role="page" id="page_index" data-theme="a" data-dom-cache="true">
+            <!--用户选项的panel-->
+            <div data-role="panel" id="user_panel"  data-display="overlay" data-position="left" data-theme="b">
+                <ul data-role="listview" class="user_panel">
+                    <div class="user_name"><img src="" alt=""/><div></div></div>
+                    <li><a href="resume.html" class="panel_to" data-transition="slide">我的简历</a></li>
+                    <li><a href="settings.html" class="panel_to" data-transition="slide">个人设置</a></li>
+                    <li><a href="#" class="logout">退出登陆</a></li>
+                    <div class="confirm_logout">
+                        <h4>确认要退出登陆？</h4>
+                        <a href="#" class="yes" data-theme="a" data-corners="false" data-role="button" data-inline="true">确定</a>
+                        <a href="#" class="no" data-theme="a" data-corners="false" data-role="button" data-inline="true">取消</a>
+                    </div>
+                </ul>
+            </div>
+            <!--panel结束-->
+
+            <!--主页页眉-->
+            <div data-role="header" id="header_index" data-position="fixed">
+                <a href="login.html" class="go_to_login" data-role="button" data-icon="plus" data-iconpos="right">登陆</a>
+                <span href="#" class="show_user_panel" data-role="none"><img src="" class="user_head_img"></span>
+                <h1 class="title">阳光职场</h1>
+                <a href="" data-icon="search" data-iconpos="notext" id="header_search">搜索</a>
+            </div>
+            <!--页眉结束-->
+
+            <!--主页主体-->
+            <div data-role="content" id="content_index">
+                <!--首页区块式分类导航-->
+                <div class="flexslider">
+                    <ul class="slides">
+                        <!--导航第一页-->
+                        <li>
+                        <div class="ui-grid-c">
+                            <a class="ui-block-a">
+                                <div class="classify_block" value="1">
+                                    <img class="classify_icon" src="images/cate_icon_1.png" alt="">
+                                    销售
+                                </div>
+                            </a>
+                            <a class="ui-block-b">
+                                <div class="classify_block " value="2">
+                                    <img class="classify_icon" src="images/cate_icon_2.png" alt="">
+                                    安保
+                                </div>
+                            </a>
+                            <a class="ui-block-c">
+                                <div class="classify_block " value="3">
+                                    <img class="classify_icon" src="images/cate_icon_3.png" alt="">
+                                    礼仪
+                                </div>
+                            </a>
+                            <a class="ui-block-d">
+                                <div class="classify_block" value="4">
+                                    <img class="classify_icon" src="images/cate_icon_4.png" alt="">
+                                    促销
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ui-grid-c">
+                            <a class="ui-block-a">
+                                <div class="classify_block" value="5">
+                                    <img class="classify_icon" src="images/cate_icon_5.png" alt="">
+                                    翻译
+                                </div>
+                            </a>
+                            <a class="ui-block-b">
+                                <div class="classify_block" value="6">
+                                    <img class="classify_icon" src="images/cate_icon_6.png" alt="">
+                                    客服
+                                </div>
+                            </a>
+                            <a class="ui-block-c">
+                                <div class="classify_block" value="7">
+                                    <img class="classify_icon" src="images/cate_icon_7.png" alt="">
+                                    演出
+                                </div>
+                            </a>
+                            <a class="ui-block-d">
+                                <div class="classify_block" value="8">
+                                    <img class="classify_icon" src="images/cate_icon_8.png" alt="">
+                                    家教
+                                </div>
+                            </a>
+                        </div>
+                        </li>
+
+                        <!--兼职类型导航第二页-->
+                        <li>
+                        <div class="ui-grid-c">
+                            <a class="ui-block-a">
+                                <div class="classify_block" value="9">
+                                    <img class="classify_icon" src="images/cate_icon_9.png" alt="">
+                                    模特
+                                </div>
+                            </a>
+                            <a class="ui-block-b">
+                                <div class="classify_block" value="10">
+                                    <img class="classify_icon" src="images/cate_icon_10.png" alt="">
+                                    派单
+                                </div>
+                            </a>
+                            <a class="ui-block-c">
+                                <div class="classify_block" value="11">
+                                    <img class="classify_icon" src="images/cate_icon_11.png" alt="">
+                                    文员
+                                </div>
+                            </a>
+                            <a class="ui-block-d">
+                                <div class="classify_block" value="12">
+                                    <img class="classify_icon" src="images/cate_icon_12.png" alt="">
+                                    设计
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ui-grid-c">
+                            <a class="ui-block-a">
+                                <div class="classify_block" value="13">
+                                    <img class="classify_icon" src="images/cate_icon_13.png" alt="">
+                                    校内
+                                </div>
+                            </a>
+                            <a class="ui-block-b">
+                                <div class="classify_block" value="14">
+                                    <img class="classify_icon" src="images/cate_icon_14.png" alt="">
+                                    临时工
+                                </div>
+                            </a>
+                            <a class="ui-block-c">
+                                <div class="classify_block" value="15">
+                                    <img class="classify_icon" src="images/cate_icon_15.png" alt="">
+                                    服务员
+                                </div>
+                            </a>
+                            <a class="ui-block-d">
+                                <div class="classify_block" value="16">
+                                    <img class="classify_icon" src="images/cate_icon_16.png" alt="">
+                                    其他
+                                </div>
+                            </a>
+                        </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--区块式分类导航结束-->
+
+                <!--首页三大引导-->
+                <div class="list_nav">
+                    <ul data-role="listview" data-inset="false" data-theme="c">
+                        <li>
+                        <a href="deals_latest.html" data-transition="slide">
+                            <img src="images/list_nav_new.png" alt="">
+                            <div class="cn">出差短租</div>
+                            <div class="en">Live out for work</div>
+                            <span class="ui-li-count">5</span>
+                        </a>
+                        </li>
+                        <li>
+                        <a href="#">
+                            <img src="images/list_nav_hot.jpg" alt="">
+                            <div class="cn">兼职换物</div>
+                            <div class="en">Pay for you want</div>
+                        </a>
+                        </li>
+                        <li>
+                        <a href="interest.html" data-transition="slide">
+                            <img src="" alt="">
+                            <div class="cn">你可能感兴趣的</div>
+                            <div class="en">You are most interested in</div>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--三大引导结束-->
+
+            </div>
+            <!--主体结束-->
+
+            <!--主页页脚-->
+            <div data-role="footer" data-position="fixed" data-theme="c" data-id="footernavbar">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="index.html" data-transition="slide" class="ui-btn-active ui-state-persist" data-icon="home">主页</a></li>
+                        <li><a href="deals.html" data-transition="slide" data-icon="clock">兼职</a></li>
+                        <li><a href="#" data-transition="slide" data-icon="shop">全职</a></li>
+                        <li><a href="home.html" data-transition="slide" data-icon="user">个人中心</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--页脚结束-->
+        </div>
+    </body>
+</html>

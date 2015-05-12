@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>现任工作</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--包含必备jq mobile文件-->
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.css" media="all">
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.icons.min.css" media="all">
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.structure.min.css" media="all">
+        <script src="jquery.mobile/jquery.js"></script>
+        <!--公共的js和css-->
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" href="css/style.css" media="all">
+        <!--公共的js和css结束-->
+        <script src="jquery.mobile/jquery.mobile.min.js"></script>
+        <!--必备框架文件结束-->
+
+        <!--包含working定义的css和js-->
+        <link rel="stylesheet" href="css/working.css" media="all">
+        <script src="js/working.js"></script>
+        <!--自定义的css和js结束-->
+    </head>
+    <body>
+        <div id="page_working" data-role="page">
+            <div id="header_working" data-role="header" data-position="fixed" data-theme="c">
+                <a href="#" data-rel="back" data-icon="back" data-theme="a" data-iconpos="notext">返回</a>
+                <h1 class="home_title">现任工作</h1>
+            </div>
+            <div id="content_working" data-role="content">
+                <ul data-role="listview" id="list_user_works" data-theme="c">
+                    <li data-role="list-divider" data-theme="a">
+                    <div class="lidiv">名称</div>
+                    <div class="lidiv">工作状态</div>
+                    <div class="lidiv">录用时间</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </body>
+</html>

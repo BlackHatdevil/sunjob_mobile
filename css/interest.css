@@ -1,0 +1,54 @@
+#page_interest #header_interest #select{
+    text-align:center;
+    margin:4.5px;
+}
+#page_interest #header_interest #select input{
+    box-shadow:none;
+    text-shadow:none;
+    border:none;
+}
+#page_interest [data-role="list-divider"]{
+    color:#fff;
+}
+#page_interest #content_interest .error{
+    display:none;
+}
+#page_interest #content_interest .error a{
+    color:#B67500;
+}
+#page_interest #content_interest #list_interest #loading{
+    text-align:center;
+    color:orange;
+}
+#page_interest #content_interest #loading img{
+    width:20px;
+    margin-left:2em;
+}
+#page_interest #content_interest #list_interest li a .deal_skim{
+    padding:1.1em 0 0 0;
+    font-size:0.8em;
+    color:#333;
+    font-weight:normal;
+}
+#page_interest #content_interest #list_interest li a .deal_skim span{
+    text-align: left;
+    float: left;
+    width: 25%;
+    color: #808080;
+}
+#page_interest #content_interest #list_interest li a .deal_skim .deal_create_time{
+    text-align: center;
+    color: #6A9900;
+}
+
+/*----------------------高分屏幕------------------*/
+@media all and (min-device-width:600px){
+    #page_interest #content_interest #list_interest li a{
+        font-size:1em;
+    }
+}
+@media all and (min-device-width:240px) and (max-device-width:600px){
+    #page_interest #content_interest #list_interest li a{
+        font-size:0.7em;
+    }
+}

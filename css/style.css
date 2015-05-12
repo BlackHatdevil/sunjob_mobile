@@ -1,0 +1,72 @@
+/*一些公共样式style.css*/
+img{
+    width:100%;
+}
+/*页头*/
+.title{
+    color:#fff;
+    font-size:1.8em;
+    text-align:center;
+    padding:5px;
+}
+/*个人中心不一样的title*/
+.home_title{
+    color:#FF8700;
+}
+/*版权*/
+.copyright{
+    text-align:center;
+    font-size:1em;
+    color:#A7A7A7;
+}
+article{
+    white-space: pre;           /* CSS 2.0 */
+    white-space: pre-wrap;      /* CSS 2.1 */
+    white-space: pre-line;      /* CSS 3.0 */
+    white-space: -pre-wrap;     /* Opera 4-6 */
+    white-space: -o-pre-wrap;   /* Opera 7 */
+    white-space: -moz-pre-wrap; /* Mozilla */
+    white-space: -hp-pre-wrap;  /* HP Printers */
+    word-wrap: break-word;      /* IE 5+, 文本行的任意字内断开 */
+}
+/*省略*/
+.ellipsis{
+    display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+.pop_loading{
+    text-align:center;
+    padding:1.8em;
+    background:#fff;
+    border:solid orange 2px;
+}
+.pop_loading img{
+    width:3em;
+    height:3em;
+}
+.pop_loading h3{
+    color:#FF8700;
+    font-size:1.2em;
+}
+.pop_box{
+    background:black;
+    opacity:0.8;
+    padding:2em;
+    font-size:120%;
+    font-weight:bold;
+    text-shadow:none;
+}
+.pop_error{
+    color:red;
+    border:red solid 2px;
+}
+.pop_success{
+    color:green;
+    border:green solid 2px;
+}
+.tip{
+    color:orange;
+    border:none;
+}
+.fw_b{
+    font-weight:bold;
+}

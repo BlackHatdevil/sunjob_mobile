@@ -1,0 +1,9 @@
+app个人简历是在个人中心点击黑色部分进入个人简历查看
+
+resume.html->预览个人简历
+resume.css
+resume.js
+	---resume_edit.html->编辑个人简历
+	---resume_edit.css
+	---resume_edit.js
+打算把个人简历存入localstorage中

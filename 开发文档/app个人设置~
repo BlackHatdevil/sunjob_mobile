@@ -1,0 +1,12 @@
+app个人设置
+位于个人中心的一个选项
+载入---settings.html
+    ---settings.css
+    ---settings.js
+    	---settings_secure.html安全和密码修改页面
+       	---settings_secure.css
+       	---settings_secure.js
+(虽然settings_secure是settings功能的一部分，但是由于js文件比较长，因此没有公用，分离了css和js)
+对应后端:msettingsModule.class.php
+
+另外尤其要注意，再保存新的个人设置以后，要check_login()执行一次来更新本地缓存

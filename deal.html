@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <!--这个页面显示用户点击开来的一项兼职的详细信息-->
+    <head>
+        <title>兼职详情</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+
+        <!--包含必备jq mobile文件-->
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.css" media="all">
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.icons.min.css" media="all">
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.structure.min.css" media="all">
+        <script src="jquery.mobile/jquery.js"></script>
+        <!--公共的js和css-->
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" href="css/style.css" media="all">
+        <!--公共的js和css结束-->
+        <script src="jquery.mobile/jquery.mobile.min.js"></script>
+        <!--必备框架文件结束-->
+
+        <!--包含deal自定义的css和js-->
+        <link rel="stylesheet" href="css/deal.css" media="all">
+        <script src="js/deal.js"></script>
+        <!--自定义的css和js结束-->
+    </head>
+    <body>
+        <div data-role="page" id="page_deal" data-theme="a">
+            <div data-role="header" id="header_deal" data-position="fixed">
+                <a href="#" data-icon="back" data-rel="back" data-iconpos="notext">返回</a>
+                <h1 class="title">兼职详情</h1>
+            </div>
+            <div data-role="content" id="content_deal" data-theme="c">
+                <ul data-role="listview" data-inset="true" data-theme="c">
+                    <li data-role="list-divider" class="deal_title" data-theme="a"></li>
+                    <li class="base_info">
+                    <div class="ui-grid-b">
+                        <div class="ui-block-a">地点：</div>
+                        <div class="ui-block-b">时间：</div>
+                        <div class="ui-block-c">浏览：</div>
+                    </div>
+                    </li>
+                </ul>
+
+                <ul data-role="listview" data-inset="true" class="more_info">
+                    <li data-role="list-divider" data-theme="a">招聘相关</li>
+                    <li class="deal_type">兼职类型：</li>
+                    <li>招聘人数：</li>
+                    <li>性别要求：</li>
+                    <li>截止日期：</li>
+                    <li>联系电话：</li>
+                    <li>信息来源：</li>
+                </ul>
+
+                <ul data-role="listview" data-inset="true" class="content">
+                    <li data-role="list-divider" data-theme="a">工作相关</li>
+                    <li>工资待遇：</li>
+                    <li>结算方式：</li>
+                    <li>工作周期：</li>
+                    <li>工作时间：</li>
+                    <li>工作地点：</li>
+                    <li>工作内容：</li>
+                </ul>
+
+                <ul data-role="listview" data-inset="true" class="contact">
+                    <li data-role="list-divider" data-theme="a">面试相关</li>
+                    <li>面试官：</li>
+                    <li>面试时间：</li>
+                    <li>面试地点：</li>
+                    <li>面试电话：</li>
+                </ul>
+            </div>
+            <div data-role="footer" id="footer_deal" data-position="fixed" class="ui-bar">
+                <a href="" data-icon="action">分享</a>
+                <a href="" id="sign" data-icon="arrow-u">报名</a>
+                <a href="" id="focus" data-icon="heart">关注</a>
+            </div>
+        </div>
+    </body>
+</html>

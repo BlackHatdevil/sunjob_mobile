@@ -1,0 +1,24 @@
+#page_focus #content_focus .list_deals{
+    text-shadow:none;
+}
+/*----------------------------------低分-----------------------------------*/
+@media screen and (min-device-width:240px) and (max-device-width:600px){
+    #page_focus #content_focus .list_deals .sign_count{
+        display:block;
+        color:green;
+    }
+}
+/*----------------------------------高分-----------------------------------*/
+@media screen and (min-device-width:600px){
+    #page_focus #content_focus .list_deals .sign_title{
+        float:left;
+    }
+    #page_focus #content_focus .list_deals .sign_count{
+        color:green;
+        position: absolute;
+        top: 1em;
+        right: 3.333em;
+        margin: 0px;
+        text-align: right;
+    }
+}

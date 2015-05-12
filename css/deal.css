@@ -1,0 +1,27 @@
+#page_deal [data-role="listview"] li{
+    white-space:normal;
+}
+#page_deal,#content_deal{
+    background:#ccc;
+}
+#page_deal [data-role="list-divider"]{
+    background:orange;
+    color:#fff;
+    font-size:1em;
+}
+#page_deal #content_deal ul .deal_title{
+    font-size:1.2em;
+    height:1.2em;
+}
+#page_deal #content_deal ul .base_info div div{
+    text-align:center;
+    white-space:normal;
+}
+#page_deal #content_deal .more_info .deal_type{
+    color:#FF8700;
+    font-weight:bold;
+    font-family:"宋体";
+}
+#page_deal .ui-bar{
+    text-align:center;
+}

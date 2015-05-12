@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--所有页面的首页，包含所有页面的css和js这是由于jquery mobile的特殊特性-->
+        <title>阳光职场-兼职</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+
+        <!--包含必备jq mobile文件-->
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.css" media="all">
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.icons.min.css" media="all">
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.structure.min.css" media="all">
+        <script src="jquery.mobile/jquery.js"></script>
+        <!--公共的js和css-->
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" href="css/style.css" media="all">
+        <!--公共的js和css结束-->
+        <script src="jquery.mobile/jquery.mobile.min.js"></script>
+        <!--必备框架文件结束-->
+
+        <!--包含deals自定义的css和js-->
+        <link rel="stylesheet" href="css/deals.css" media="all">
+        <script src="js/deals.js"></script>
+        <script src="js/iscroll.js"></script>
+        <script src="js/jquery.more.js"></script>
+        <!--自定义的css和js结束-->
+    </head>
+    <body>
+        <div data-role="page" id="page_deals" data-theme="a" data-dom-cache="true">
+            <!--主页页眉-->
+            <div data-role="header" id="header_deals" data-position="fixed">
+                <div id="header_deals_filter">
+                    <select id="province" name="province" data-shadow="true" data-corners="true" data-inline="true"><option value="0">省份</option></select>
+                    <select id="city" name="city" data-shadow="true" data-corners="true" data-inline="true"><option value="0">城市</option></select>
+                    <select id="cate_id" name="cate_id" data-shadow="true" data-corners="true" data-inline="true"><option value="0">类型</option></select>
+                </div>
+                <div id="header_deals_search">
+                    <input type="search" placeholder="搜兼职" name="search" id="search" value=""/>
+                </div>
+            </div>
+            <!--页眉结束-->
+
+            <!--主页主体-->
+            <div data-role="content" id="content_deals">
+                <div id="scroller">
+                    <div id="pullDown">
+                        <span class="pullDownLabel">下拉刷新...</span>
+                    </div>
+
+                    <ul id="list_deals" data-role="listview">
+                    </ul>
+
+                    <div id="pullUp">
+                        <span class="pullUpIcon"></span><span class="pullUpLabel">上拉加载更多...</span>
+                    </div>
+                </div>
+            </div>
+            <!--主体结束-->
+
+            <!--主页页脚-->
+            <div data-role="footer" data-position="fixed" data-theme="c" data-id="footernavbar">
+                <div data-role="navbar">
+                    <ul>
+                        <!--去首页的需要反向滑动-->
+                        <li><a href="index.html" data-transition="slide" data-direction="reverse" data-icon="home">主页</a></li>
+                        <li><a href="deals.html" data-transition="slide" class="ui-btn-active ui-state-persist" data-icon="clock">兼职</a></li>
+                        <li><a href="#" data-transition="slide" data-icon="shop">全职</a></li>
+                        <li><a href="home.html" data-transition="slide" data-icon="user">个人中心</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--页脚结束-->
+        </div>
+    </body>
+</html>

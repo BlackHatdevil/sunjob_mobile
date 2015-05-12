@@ -1,0 +1,58 @@
+/*一些注册的公共样式*/
+#page_register .register_box{
+    background:#fff;
+    -webkit-box-shadow: 0 1px 8px /*{global-box-shadow-size}*/ rgba(0,0,0,0.2) /*{global-box-shadow-color}*/;
+    -moz-box-shadow: 0 1px 8px /*{global-box-shadow-size}*/ rgba(0,0,0,0.2) /*{global-box-shadow-color}*/;
+    box-shadow: 0 1px 8px /*{global-box-shadow-size}*/ rgba(0,0,0,0.2) /*{global-box-shadow-color}*/;
+}
+
+/*低分辨率样式*/
+@media screen and (min-device-width:240px) and (max-device-width:600px){
+    #page_register .tip_box{
+        height:2.5em;
+        text-align: center;
+        font-size: 0.9em;
+        color:red;
+        display:block;
+        margin:1em;
+    }
+    #page_register .register_box{
+        padding:2em 1em;
+    }
+}
+@media screen and (min-device-width:600px){
+    #page_register .register_box{
+        padding:3em 2em;
+    }
+    #page_register .tip_box{
+        height:3em;
+        text-align: center;
+        font-size: 1.2em;
+        color:red;
+        display:block;
+    }
+}
+#page_register .register_title{
+    text-align:center;
+    color:#00B300;
+    border-bottom:2px solid #00B300;
+}
+
+#page_register .more{
+    color:#FE6B1B;
+}
+#page_register .pannel-title{
+    padding:10px;
+    background:orange;
+    color:#fff;
+    font-size:1.5em;
+}
+#page_register .form_tip{
+    color: #FC5900;
+}
+#page_register .form_success{
+    color: green;
+}
+#page_register .form_error{
+    color: red;
+}

@@ -1,0 +1,128 @@
+/*低分辨率样式*/
+@media screen and (min-device-width:240px) and (max-device-width:600px){
+    #page_index .classify_block{
+        background:#FFF;
+        text-align:center;
+        font-size:0.8em;
+        color:#333;
+        cursor:pointer;
+        padding-top:1.2em;
+        padding-bottom:1.2em;
+    }
+    #page_index .list_nav li a .cn{
+        font-size:1.2em;
+        font-weight:normal;
+        color:#6F6666;
+    }
+    #page_index .classify_icon{
+        height:36px;
+        width:36px;
+        display:block;
+        margin:0 auto;
+    }
+    #page_index .list_nav li a .en{
+        font-size:0.7em;
+        font-family:"幼圆";
+    }
+    #page_index #user_panel .user_name{
+        padding:1em;
+        font-size:0.6em;
+        text-align:center;
+        color:orange;
+        text-shadow:none;
+        font-weight:bold;
+    }
+    #page_index #user_panel .user_name img{
+        -webkit-border-radius:4em;
+        -moz-border-radius:4em;
+        -o-border-radius:4em;
+        border-radius:4em;
+        height:30px;
+        width:30px;
+    }
+}
+/*高分辨率*/
+@media screen and (min-device-width:600px){
+    #page_index .classify_block{
+        background:#FFF;
+        text-align:center;
+        color:#333;
+        cursor:pointer;
+        padding:2em 0em;
+    }
+    #page_index .classify_icon{
+        height:80px;
+        width:80px;
+        display:block;
+        margin:0 auto;
+    }
+    #page_index .list_nav li a .cn{
+        font-size:2em;
+        font-weight:normal;
+        color:#6F6666;
+        padding:0;
+    }
+    #page_index .list_nav li a .en{
+        font-size:1em;
+        font-family:"幼圆";
+    }
+    #page_index #user_panel .user_name{
+        padding:1.5em;
+        font-size:1.4em;
+        text-align:center;
+        color:orange;
+        text-shadow:none;
+        font-weight:bold;
+    }
+    #page_index #user_panel .user_name img{
+        -webkit-border-radius:4em;
+        -moz-border-radius:4em;
+        -o-border-radius:4em;
+        border-radius:4em;
+        height:55px;
+        width:55px;
+    }
+}
+
+#page_index .list_nav{
+    margin-top:4.5em;
+}
+#page_index .list_nav .ui-li-has-thumb{
+    background:#fff;
+}
+#page_index .show_user_panel .user_head_img{
+    -webkit-border-radius:4em;
+    -moz-border-radius:4em;
+    -o-border-radius:4em;
+    border-radius:4em;
+}
+#page_index .show_user_panel{
+    float:left;
+    padding:0.2em 0.5em 0em;
+    display:none;
+}
+#page_index #header_index .go_to_login{
+    display:none;
+}
+#page_index #user_panel .confirm_logout{
+    text-align:center;
+    text-shadow:none;
+    display:none;
+}
+
+#page_index #user_panel .user_name{
+    padding:1.5em;
+    font-size:1.4em;
+    text-align:center;
+    color:orange;
+    text-shadow:none;
+    font-weight:bold;
+}
+#page_index #user_panel .user_name img{
+    -webkit-border-radius:4em;
+    -moz-border-radius:4em;
+    -o-border-radius:4em;
+    border-radius:4em;
+    height:55px;
+    width:55px;
+}

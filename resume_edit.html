@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>编辑简历</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+
+        <!--包含必备jq mobile文件-->
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.css" media="all">
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.icons.min.css" media="all">
+        <link rel="stylesheet" href="jquery.mobile/jquery.mobile.structure.min.css" media="all">
+        <script src="jquery.mobile/jquery.js"></script>
+        <!--公共的js和css-->
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" href="css/style.css" media="all">
+        <!--公共的js和css结束-->
+        <script src="jquery.mobile/jquery.mobile.min.js"></script>
+        <!--必备框架文件结束-->
+
+        <!--包含resume_edit定义的css和js-->
+        <link rel="stylesheet" href="css/resume_edit.css" media="all">
+        <script src="js/resume_edit.js"></script>
+        <script src="js/ajaxupload.js"></script>
+        <!--自定义的css和js结束-->
+    </head>
+    <body>
+        <!--这个页面必须缓存-->
+        <div id="page_resume_edit" data-role="page" data-dom-cache="true">
+
+            <div id="header_resume_edit" data-role="header" data-position="fixed" data-theme="c">
+                <!--由于退出到resume时候会清除当前page,所以需要返回直接指向页面地址-->
+                <a href="#" data-rel="back" data-icon="back" data-theme="a" data-iconpos="notext">返回</a>
+                <h1 class="home_title">编辑个人简历</h1>
+                <a href="inc/resume_edit_headimg.html" data-transition="slide" data-icon="user" data-theme="a">更换头像</a>
+            </div>
+
+            <div id="content_resume_edit" data-role="content">
+                <form action="" method="POST" class="ajax_form">
+                    <ul data-role="listview" data-theme="a" data-inset="true">
+                        <li data-role="list-divider" class="resume_title">简历</li>
+                        <li>
+                        <div data-role="fieldcontain">
+                            <label for="intention">求职意向</label>
+                            <select id="intention" name="intention" multiple></select>
+                        </div>
+                        </li>
+                        <li data-theme="c"><a data-transition="slide" href="inc/resume_edit_freetime.html">点击编辑空闲时间</a></li>
+                    </ul>
+
+                    <ul data-role="listview" data-inset="true" data-theme="a">
+                        <li>
+                        <div data-role="fieldcontain">
+                            <label for="real_name">真实姓名</label>
+                            <input id="real_name" name="real_name" type="text"/>
+                        </div>
+                        </li>
+                        <li>
+                        <div data-role="fieldcontain">
+                            <label for="height">身高（cm）</label>
+                            <input id="height" name="height" type="number"/>
+                        </div>
+                        </li>
+                        <li>
+                        <div data-role="fieldcontain">
+                            <label for="weight">体重（kg）</label>
+                            <input id="weight" name="weight" type="number"/>
+                        </div>
+                        </li>
+                        <li>
+                        <div data-role="fieldcontain">
+                            <label for="birth">生日</label>
+                            <input id="birth" name="birth" type="date"/>
+                        </div>
+                        </li>
+                    </ul>
+                    <ul data-role="listview" data-inset="true">
+                        <li><a href="inc/resume_edit_college.html" data-transition="slide" id="college">选择学校</a></li>
+                    </ul>
+                    <ul data-role="listview" data-inset="true">
+                        <li>
+                        <div data-role="fieldcontain">
+                            <label for="introme">自我简介</label>
+                            <textarea id="introme" name="introme" cols="30" rows="10"></textarea>
+                        </div>
+                        </li>
+                        <li>
+                        <div data-role="fieldcontain">
+                            <label for="experience">曾任职位</label>
+                            <textarea id="experience" name="experience" cols="30" rows="10"></textarea>
+                        </div>
+                        </li>
+                    </ul>
+                    <div class="submit_btn_row">
+                        <a data-role="button" id="submit_form">提交简历</a>
+                    </div>
+                    <div class="submiting">
+                        <a data-role="button">简历保存中...</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

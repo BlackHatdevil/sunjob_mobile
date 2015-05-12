@@ -1,0 +1,29 @@
+/*密码与安全一块的css*/
+#page_settings_secure [data-role="list-divider"]{
+    background:orange;
+    color:#fff;
+    font-size:1.2em;
+}
+#page_settings_secure #content_settings_secure .ajax_form label{
+    color:#404040;
+}
+#page_settings_secure .submit_btn_row{
+    text-align:center;
+    color:#404040;
+}
+#page_settings_secure #pop_info{
+    background:#000;
+    padding:0.6em 1em;
+    color:#fff;
+    opacity:0.6;
+    font-weight:bold;
+    text-align:center;
+    font-size:1em;
+}
+#page_settings_secure #content_settings_secure .submiting{
+    display:none;
+    text-align:center;
+}
+#page_settings_secure #content_settings_secure .submiting a{
+    color:#FF8700;
+}

@@ -1,0 +1,64 @@
+#page_resume_edit [data-role="list-divider"]{
+    color:#fff;
+    font-size:1.2em;
+    text-align:center;
+}
+#page_resume_edit #content_resume_edit ul{
+    margin-top:1em;
+}
+#page_resume_edit #content_resume_edit .ui-listview .ui-li-static {
+    padding: 0 0.7em;
+}
+#page_resume_edit .submiting{
+    display:none;
+}
+#page_resume_edit .submiting a{
+    color:#FF8700;
+}
+
+/*----------------------------------------------------------------------resume_edit_freetime的样式*/
+@media all and (min-device-width:600px){
+    #page_resume_edit_freetime #content_resume_edit_freetime table{
+        border:#ccc solid 0.1em;
+        font-size:1em;
+    }
+    #page_resume_edit_freetime #content_resume_edit_freetime th,tr,td{
+        border:#ccc solid 0.1em;
+        height:3em;
+        width:12.5%;
+    }
+}
+@media all and (min-device-width:240px) and (max-device-width:600px){
+    #page_resume_edit_freetime #content_resume_edit_freetime table{
+        border:#ccc solid 0.1em;
+        font-size:0.6em;
+    }
+    #page_resume_edit_freetime #content_resume_edit_freetime th,tr,td{
+        border:#ccc solid 0.1em;
+        height:1.8em;
+        width:12.5%;
+    }
+}
+#page_resume_edit_freetime #content_resume_edit_freetime .time_block{
+}
+.time_block_selected{
+    border-radius:1em;
+    background:orange;
+    border:none;
+}
+
+/*关于inc/resume_edit_headimg.html的样式布局*/
+#page_resume_edit_headimg #content_resume_edit_headimg .user_head{
+    text-align:center;
+}
+#page_resume_edit_headimg #content_resume_edit_headimg #user_head_big{
+    width:10em;
+    height:10em;
+    border-radius:5em;
+}
+#page_resume_edit_headimg #content_resume_edit_headimg #avatar_file{
+    display:none;
+}
+#page_resume_edit_headimg #content_resume_edit_headimg #img_uploading{
+    display:none;
+}
